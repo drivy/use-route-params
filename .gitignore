@@ -1,0 +1,7 @@
+# Build
+index.js
+types
+
+# Environment
+node_modules
+yarn-error.log
