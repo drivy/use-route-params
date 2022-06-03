@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "types",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "noEmit": false,
+    /**
+     *Add the next line if using globals
+     */
+    "types": []
+  },
+  "exclude": ["lib/*.test.ts"]
+}

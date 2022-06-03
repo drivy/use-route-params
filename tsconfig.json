@@ -1,0 +1,13 @@
+{
+  "extends": "./node_modules/@getaround-eu/ts-config/base",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "commonjs",
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "types": ["vitest/globals"]
+  },
+  "include": ["lib/**/*"]
+}
