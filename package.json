@@ -14,7 +14,7 @@
     "build": "esbuild ./lib/index.tsx --bundle --outdir=dist && cp -rf ./package.json dist && cp -rf ./LICENSE dist && cp -rf ./README.md dist",
     "postbuild": "tsc --project tsconfig-build.json",
     "lint": "eslint ./lib && tsc --noEmit",
-    "build:publish": "yarn build && npx np --contents dist"
+    "build:publish": "yarn build && np --contents dist"
   },
   "devDependencies": {
     "@getaround-eu/eslint-config": "1.7.1",
