@@ -3,6 +3,8 @@
   "version": "1.0.2",
   "description": "A hook to get typed params from route",
   "main": "index.js",
+  "module": "index.js",
+  "types": "types/index.d.ts",
   "author": "CPatchane <code@patchane.com>",
   "license": "MIT",
   "peerDependencies": {
@@ -35,6 +37,10 @@
     "react-router-dom": "6.3.0",
     "typescript": "4.7.4",
     "vitest": "0.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drivy/use-route-params.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
