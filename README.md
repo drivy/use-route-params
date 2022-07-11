@@ -13,7 +13,7 @@
 
 ### What's it?
 
-`useRouteParams` is a hook which, used with `react-router-dom`, allows you to directly get the typed params from a provided route path.
+`useRouteParams` is a hook which, used with [`react-router-dom v6`](https://github.com/remix-run/react-router/tree/main/packages/react-router-dom), allows you to directly get the typed params from a provided route path.
 
 ### Install
 
