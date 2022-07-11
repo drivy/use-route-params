@@ -1,7 +1,7 @@
 <h1 align="center">@getaround-eu/use-route-params</h1>
 
 <div align="center">
-  <a href="https://github.com/drivy/use-route-params/blob/main/LICENSE.md">
+  <a href="https://github.com/drivy/use-route-params/blob/main/LICENSE">
     <img src="https://badgen.net/github/license/drivy/use-route-params.svg" alt="license" />
   </a>
   <a href="https://npmjs.com/package/drivy/use-route-params">
