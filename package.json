@@ -11,7 +11,7 @@
   "scripts": {
     "test": "vitest run --globals test.tsx",
     "prebuild": "rm -rf dist/",
-    "build": "esbuild ./lib/index.tsx --bundle --outdir=dist && cp -rf ./package.json dist && cp -rf ./LICENSE dist && cp -rf ./README.md dist",
+    "build": "esbuild ./lib/index.tsx --bundle --outdir=dist --external:react-router-dom && cp -rf ./package.json dist && cp -rf ./LICENSE dist && cp -rf ./README.md dist",
     "postbuild": "tsc --project tsconfig-build.json",
     "lint": "eslint ./lib && tsc --noEmit",
     "build:publish": "yarn build && np --contents dist"
