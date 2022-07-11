@@ -1,6 +1,6 @@
 {
   "name": "@getaround-eu/use-route-params",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A hook to get typed params from route",
   "main": "index.js",
   "author": "CPatchane <code@patchane.com>",
@@ -45,5 +45,16 @@
     "index.js",
     "LICENSE"
   ],
-  "keywords": ["react-router", "react-router-dom", "react", "router", "typescript", "params", "url", "hook", "typed", "use-params"]
+  "keywords": [
+    "react-router",
+    "react-router-dom",
+    "react",
+    "router",
+    "typescript",
+    "params",
+    "url",
+    "hook",
+    "typed",
+    "use-params"
+  ]
 }
