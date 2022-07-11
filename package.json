@@ -45,5 +45,5 @@
     "index.js",
     "LICENSE"
   ],
-  "dependencies": {}
+  "keywords": ["react-router", "react-router-dom", "react", "router", "typescript", "params", "url", "hook", "typed", "use-params"]
 }
