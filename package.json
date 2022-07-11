@@ -1,6 +1,6 @@
 {
-  "name": "use-route-params",
-  "version": "1.0.0",
+  "name": "@getaround-eu/use-route-params",
+  "version": "0.1.0",
   "description": "A hook to get typed params from route",
   "main": "index.js",
   "author": "CPatchane <code@patchane.com>",
@@ -9,10 +9,12 @@
     "react-router-dom": "^6.3.0"
   },
   "scripts": {
-    "test": "vitest --globals test.ts",
-    "build": "esbuild ./lib/index.ts --bundle --outdir=.",
-    "postbuild": "rm -rf types && tsc --project tsconfig-build.json",
-    "lint": "eslint ./lib && tsc --noEmit"
+    "test": "vitest run --globals test.tsx",
+    "prebuild": "rm -rf dist/",
+    "build": "esbuild ./lib/index.tsx --bundle --outdir=dist && cp -rf ./package.json dist && cp -rf ./LICENSE dist && cp -rf ./README.md dist",
+    "postbuild": "tsc --project tsconfig-build.json",
+    "lint": "eslint ./lib && tsc --noEmit",
+    "build:publish": "yarn build && npx np --contents dist"
   },
   "devDependencies": {
     "@getaround-eu/eslint-config": "1.7.1",
@@ -20,15 +22,16 @@
     "@getaround-eu/ts-config": "2.1.0",
     "@rushstack/eslint-patch": "1.1.3",
     "@testing-library/react": "13.3.0",
-    "@types/node": "17.0.41",
-    "@types/react": "18.0.12",
-    "conditional-type-checks": "1.0.5",
-    "esbuild": "0.14.43",
-    "eslint": "8.17.0",
-    "jsdom": "19.0.0",
-    "prettier": "2.6.2",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "@types/node": "18.0.3",
+    "@types/react": "18.0.15",
+    "conditional-type-checks": "1.0.6",
+    "esbuild": "0.14.49",
+    "eslint": "8.19.0",
+    "jsdom": "20.0.0",
+    "np": "7.6.2",
+    "prettier": "2.7.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-router-dom": "6.3.0",
     "typescript": "4.7.3",
     "vitest": "0.14.1"
@@ -36,6 +39,7 @@
   "files": [
     "types/**/*",
     "index.js",
-    "README.md"
-  ]
+    "LICENSE"
+  ],
+  "dependencies": {}
 }
