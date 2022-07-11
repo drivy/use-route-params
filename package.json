@@ -1,6 +1,6 @@
 {
   "name": "@getaround-eu/use-route-params",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A hook to get typed params from route",
   "main": "index.js",
   "module": "index.js",
