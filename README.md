@@ -2,10 +2,10 @@
 
 <div align="center">
   <a href="https://github.com/drivy/use-route-params/blob/main/LICENSE">
-    <img src="https://badgen.net/github/license/drivy/use-route-params.svg" alt="license" />
+    <img src="https://badgen.net/npm/license/@getaround-eu/use-route-params" alt="license" />
   </a>
-  <a href="https://npmjs.com/package/drivy/use-route-params">
-    <img src="https://badgen.net/npm/v/drivy/use-route-params" alt="package version" />
+  <a href="https://npmjs.com/package/@getaround-eu/use-route-params">
+    <img src="https://badgen.net/npm/v/@getaround-eu/use-route-params" alt="package version" />
   </a>
 </div>
 
