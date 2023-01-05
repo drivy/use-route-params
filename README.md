@@ -39,6 +39,11 @@ const MyComponent = () => {
   return (...)
 }
 
+// This way the route is always bound to the component
+MyComponent.routePath = MY_COMPONENT_PATH
+
+export default MyComponent
+
 ```
 
 ## What is Getaround?

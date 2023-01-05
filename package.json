@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "description": "A hook to get typed params from route",
   "main": "index.js",
-  "module": "index.js",
+  "module": "index.mjs",
   "types": "types/index.d.ts",
   "author": "CPatchane <code@patchane.com>",
   "license": "MIT",
@@ -13,7 +13,9 @@
   "scripts": {
     "test": "vitest run --globals test.tsx",
     "prebuild": "rm -rf dist/",
-    "build": "esbuild ./lib/index.tsx --bundle --outdir=dist --external:react-router-dom && cp -rf ./package.json dist && cp -rf ./LICENSE dist && cp -rf ./README.md dist",
+    "build:cjs": "esbuild ./lib/index.ts --bundle --outdir=dist --external:react-router-dom --format=cjs",
+    "build:mjs": "esbuild ./lib/index.ts --bundle --outdir=dist --external:react-router-dom --format=esm --out-extension:.js=.mjs",
+    "build": "yarn build:cjs && yarn build:mjs && cp -rf ./package.json dist && cp -rf ./LICENSE dist && cp -rf ./README.md dist",
     "postbuild": "tsc --project tsconfig-build.json",
     "lint": "eslint ./lib && tsc --noEmit",
     "build:publish": "yarn build && np --contents dist"
